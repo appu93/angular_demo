@@ -1,0 +1,41 @@
+{
+  "productList": [
+    {
+      "productName": "Mango",
+      "category": "Fruits",
+      "gender": "Brand New",
+      "price": 80,
+      "comment": "ff",
+      "date": "2023-04-13T04:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "Carrot",
+      "category": "Vegetables",
+      "gender": "Second Hand",
+      "price": 20,
+      "comment": "tets",
+      "date": "2023-04-14T04:00:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "Orange",
+      "category": "Fruits",
+      "gender": "Brand New",
+      "price": 78,
+      "comment": "test",
+      "date": "2023-04-19T04:00:00.000Z",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
