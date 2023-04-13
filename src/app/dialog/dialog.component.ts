@@ -10,7 +10,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class DialogComponent implements OnInit {
   freshnessList = ["Brand New", "Second Hand"];
-  actionBtn = 'save';
+  actionBtn = 'Save';
   productForm : FormGroup; 
 
   constructor(private formBuilder: FormBuilder, private apiService: ApiService,
@@ -24,13 +24,13 @@ export class DialogComponent implements OnInit {
       category: ['', Validators.required],
       gender: ['', Validators.required],
       price: ['', Validators.required],
-      comment: ['', Validators.required],
+      comment: [''],
       date: ['', Validators.required],
 
     })
     console.log('tt', this.editData)
     if(this.editData) {
-      this.actionBtn = 'edit';
+      this.actionBtn = 'Edit';
       this.productForm.controls['productName'].setValue(this.editData.productName);
       this.productForm.controls['category'].setValue(this.editData.category);
       this.productForm.controls['gender'].setValue(this.editData.gender);
